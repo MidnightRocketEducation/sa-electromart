@@ -18,4 +18,8 @@ export class Product {
   public getPrice(): number {
     return (this.basePrice * (1 - this.discountRate)) * this.taxRate;
   }
+
+  public getPriceWithoutTaxes(): number {
+    return this.basePrice * (1 - this.discountRate)
+  }
 }
