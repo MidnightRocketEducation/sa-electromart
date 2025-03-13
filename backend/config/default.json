@@ -1,0 +1,9 @@
+{
+	"DefaultProductInformation": {
+		"TaxRate": 1.25,
+		"DiscountRate": 0.10
+	},
+	"Products": {
+		"_comment": "Store product informations"
+	}
+}
