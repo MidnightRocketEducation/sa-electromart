@@ -12,7 +12,7 @@ export class Product {
     this.title = title;
     this.imageUrl = imageUrl;
     this.basePrice = basePrice;
-    this.productType: ProductType;
+    this.productType = productType;
   }
 
   public getPrice(): number {
