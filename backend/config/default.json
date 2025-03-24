@@ -5,5 +5,8 @@
 	},
 	"Products": {
 		"_comment": "Store product informations"
+	},
+	"UnfinishedFeature": {
+		"Enabled": false
 	}
 }
