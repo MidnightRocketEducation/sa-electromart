@@ -32,8 +32,15 @@ app.get("/get-products-by-category", (req: Request, res: Response) => {
   return res.json(products);
 });
 
+
+let unfinished_feature_in_development = true;
 app.get("/unfinished-feature", (_: Request, res: Response) => {
   // Oh no, this feature is not ready for production!
+  if(unfinished_feature_in_development) {
+    return res.status(404).send('Cannot GET /unfinished-feature');
+  }
+
+
   return res.status(500).send('Internal Server Error');
 });
 
